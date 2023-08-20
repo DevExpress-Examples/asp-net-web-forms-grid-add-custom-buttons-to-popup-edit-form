@@ -7,36 +7,27 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <style type="text/css">
-        .prevButton
-        {
+        .prevButton {
             left: -3px;
         }
-
-        .nextButton
-        {
+        .nextButton {
             right: -3px;
         }
-
-        .navButtons
-        {
+        .navButtons {
             position: absolute;
             top: 40%;
             background-color: rgba(0, 0, 0, 0.15);
             background-image: none !important;
         }
-
-            .navButtons .dxb
-            {
-                width: 10px;
-                height: 50px;
-                padding-left: 3px !important;
-                padding-right: 3px !important;
-            }
-
-            .navButtons:hover
-            {
-                background-color: rgba(0, 0, 0, 0.75);
-            }
+        .navButtons .dxb {
+            width: 10px;
+            height: 50px;
+            padding-left: 3px !important;
+            padding-right: 3px !important;
+        }
+        .navButtons:hover {
+            background-color: rgba(0, 0, 0, 0.75);
+        }
     </style>
     <title></title>
 </head>
@@ -46,29 +37,19 @@
             KeyFieldName="ProductID" ClientInstanceName="gridView" EnableCallbackAnimation="false">
             <SettingsLoadingPanel Delay="0" Mode="ShowAsPopup" />
             <Columns>
-                <dx:GridViewCommandColumn ShowEditButton="True" VisibleIndex="0">
-                </dx:GridViewCommandColumn>
-                <dx:GridViewDataTextColumn FieldName="ProductID" ReadOnly="True" VisibleIndex="1">
+                <dx:GridViewCommandColumn ShowEditButton="True" />
+                <dx:GridViewDataTextColumn FieldName="ProductID" ReadOnly="True" >
                     <EditFormSettings Visible="False" />
                 </dx:GridViewDataTextColumn>
-                <dx:GridViewDataTextColumn FieldName="ProductName" VisibleIndex="2">
-                </dx:GridViewDataTextColumn>
-                <dx:GridViewDataTextColumn FieldName="SupplierID" VisibleIndex="3">
-                </dx:GridViewDataTextColumn>
-                <dx:GridViewDataTextColumn FieldName="CategoryID" VisibleIndex="4">
-                </dx:GridViewDataTextColumn>
-                <dx:GridViewDataTextColumn FieldName="QuantityPerUnit" VisibleIndex="5">
-                </dx:GridViewDataTextColumn>
-                <dx:GridViewDataTextColumn FieldName="UnitPrice" VisibleIndex="6">
-                </dx:GridViewDataTextColumn>
-                <dx:GridViewDataTextColumn FieldName="UnitsInStock" VisibleIndex="7">
-                </dx:GridViewDataTextColumn>
-                <dx:GridViewDataTextColumn FieldName="UnitsOnOrder" VisibleIndex="8">
-                </dx:GridViewDataTextColumn>
-                <dx:GridViewDataTextColumn FieldName="ReorderLevel" VisibleIndex="9">
-                </dx:GridViewDataTextColumn>
-                <dx:GridViewDataCheckColumn FieldName="Discontinued" VisibleIndex="10">
-                </dx:GridViewDataCheckColumn>
+                <dx:GridViewDataTextColumn FieldName="ProductName" />
+                <dx:GridViewDataTextColumn FieldName="SupplierID" />
+                <dx:GridViewDataTextColumn FieldName="CategoryID" />
+                <dx:GridViewDataTextColumn FieldName="QuantityPerUnit" />
+                <dx:GridViewDataTextColumn FieldName="UnitPrice" />
+                <dx:GridViewDataTextColumn FieldName="UnitsInStock" />
+                <dx:GridViewDataTextColumn FieldName="UnitsOnOrder" />
+                <dx:GridViewDataTextColumn FieldName="ReorderLevel" />
+                <dx:GridViewDataCheckColumn FieldName="Discontinued" />
                 <dx:GridViewDataColumn Visible="false">
                     <EditFormSettings Visible="True" />
                     <EditItemTemplate>
@@ -81,7 +62,7 @@
                     </EditItemTemplate>
                 </dx:GridViewDataColumn>
             </Columns>
-            <SettingsEditing Mode="PopupEditForm"></SettingsEditing>
+            <SettingsEditing Mode="PopupEditForm" />
             <SettingsPopup>
                 <EditForm VerticalAlign="WindowCenter" HorizontalAlign="WindowCenter" />
             </SettingsPopup>
@@ -93,7 +74,7 @@
                 </EditForm>
             </StylesPopup>
         </dx:ASPxGridView>
-        <asp:AccessDataSource ID="ads" runat="server" DataFile="~/App_Data/nwind.mdb" SelectCommand="SELECT * FROM [Products]"></asp:AccessDataSource>
+        <asp:AccessDataSource ID="ads" runat="server" DataFile="~/App_Data/nwind.mdb" SelectCommand="SELECT * FROM [Products]" />
     </form>
 </body>
 </html>
