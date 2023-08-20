@@ -53,12 +53,8 @@
                 <dx:GridViewDataColumn Visible="false">
                     <EditFormSettings Visible="True" />
                     <EditItemTemplate>
-                        <dx:ASPxButton ID="buttonPrev" runat="server" Text="<" CssClass="navButtons prevButton"
-                            AutoPostBack="false" OnInit="buttonPrev_Init">
-                        </dx:ASPxButton>
-                        <dx:ASPxButton ID="buttonNext" runat="server" Text=">" CssClass="navButtons nextButton"
-                            AutoPostBack="false" OnInit="buttonNext_Init">
-                        </dx:ASPxButton>
+                        <dx:ASPxButton ID="buttonPrev" runat="server" Text="<" CssClass="navButtons prevButton" AutoPostBack="false" OnInit="buttonPrev_Init" />
+                        <dx:ASPxButton ID="buttonNext" runat="server" Text=">" CssClass="navButtons nextButton" AutoPostBack="false" OnInit="buttonNext_Init" />
                     </EditItemTemplate>
                 </dx:GridViewDataColumn>
             </Columns>
