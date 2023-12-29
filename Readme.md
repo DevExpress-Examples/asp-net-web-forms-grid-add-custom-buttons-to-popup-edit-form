@@ -4,9 +4,6 @@
 [![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
 <!-- default badges end -->
 # Grid View for ASP.NET Web Forms - How to show the Next/Previous buttons on the popup edit form
-<!-- run online -->
-**[[Run Online]](https://codecentral.devexpress.com/128535660/)**
-<!-- run online end -->
 
 This example demonstrates how to specify a column's `EditItemTempalate` property and add custom buttons to the template.
 
